@@ -5,6 +5,7 @@ let audio = document.querySelector(".audio");
 let imgPronounce = document.querySelector(".content__pronounce");
 let description = document.querySelector(".content__descrtiption");
 let content = document.querySelector('.content')
+input.focus()
 function loadData() {
   fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${input.value}`)
     .then((res) => {
@@ -27,7 +28,12 @@ function loadData() {
       description.innerHTML = item[0].meanings[0].definitions[0].definition;
     })
     .catch(() => {
-      console.log("hahahan :*");
+      alert('sorry we cant find :((😭')
+      input.value = ''
+      button.blur()
+      content.style.height = '0px'
+
+
     });
 
   function resBad() {
