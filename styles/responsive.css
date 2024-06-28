@@ -1,5 +1,15 @@
 
 @media (min-width : 576px) {
+    .wrapper__title {
+        font-size: 5rem;
+    }
+    .submit {
+        width: 15rem;
+
+    }
+    .wrapper-top {
+        flex-wrap: nowrap;
+    }
 
 }
 @media (min-width : 768px) {
