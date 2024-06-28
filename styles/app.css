@@ -89,7 +89,9 @@ ul {
     
 } 
 .content {
-    
+    height: 0;
+    overflow: hidden;
+    transition: all 120ms ease-in-out;
 }
 .content-top {
     display: flex;
